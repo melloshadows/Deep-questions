@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ddd; 
+  }
+  
+h1 {
+    margin-top: 20px;
+    margin-bottom:120px ;
+    color: #fff; 
+    font-size: 2em; 
+}
+  
+.card {
+    margin-bottom: 20px ;
+    border-radius: 5px; 
+    background: linear-gradient(to bottom, #000 0%, #442a8d 100%); 
+    padding: 30px;
+    min-height: 200px;
+    width: 320px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    position: relative; 
+    transition: transform 0.5s ease-in-out; 
+    color: #fff; 
+    outline: 1.5px solid rgb(71, 62, 62);
+    outline-offset: 2px;
+}
+  
+.flipped1 {
+    transform: rotateY(180deg); 
+} 
+
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: xx-large;
+    transition: all 0.3s;
+}
+
+.show:hover{
+    opacity: 0.6;
+    font-weight: bolder;
+}
+
+.vote,.next,.again{
+    display: none;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadein{
+    animation: fade-in 1.5s forwards;
+}
+
+.card-content {
+    opacity: 0 ;
+    width: 100%;
+    height: 100%;
+    font-family: fantasy;
+    font-size: xx-large;
+    line-height: 2em;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+h2 {
+    color: #fff; 
+    margin-bottom: 50px;
+    text-align: center;
+}
+  
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f2f2f2; 
+    color: #333; 
+    font-size: 16px; 
+    border-radius: 3px;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #8e44ad; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out; 
+}
+  
+button:hover {
+    background-color: #b968c0; 
+}
+  
+#results {
+    display: none;
+    max-width: 600px;
+    word-wrap: break-word;
+    font-size: xx-large;
+}
+
+
+.player-answer{
+    margin-bottom: 50px;
+}
+
+  
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}

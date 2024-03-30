@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Deep Questions</title>
+            <link rel="stylesheet" href="Deep_Questions.css">
+        </head>
+        <body>
+            <h1>Deep Questions</h1>
+            
+            <div id="game-container">
+                <div class="card">
+                    <p class="show">show question</p>
+                    <p id="question" class="card-content"></p>
+                </div>
+                
+                
+                <textarea id="answer" placeholder="Write your answer deeply..." autofocus></textarea>
+                
+                <button>Next Player</button>
+                <button class="next">FINISH</button>
+                <button class="again">Play Again</button>
+                <button class="vote">Vote To Show Results</button>
+                
+                <div id="results">
+                    <h2>Results</h2>
+                    <p class="player-answer"></p>
+                </div>
+                
+            </div>
+            
+            <script src="Deep_Questions.js"></script>
+            <script src="questions.js"></script>
+        
+        </body>
+</html>
