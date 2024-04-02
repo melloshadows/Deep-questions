@@ -5,11 +5,15 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Deep Questions</title>
             <link rel="stylesheet" href="Deep_Questions.css">
+            <link rel="icon" href="img/icon.png" type="image/x-icon">
         </head>
         <body>
             <h1>Deep Questions</h1>
             
             <div id="game-container">
+                <p class="turn"></p>
+                <p class="nextturn"></p>
+               
                 <div class="card">
                     <p class="show">show question</p>
                     <p id="question" class="card-content"></p>
@@ -18,14 +22,23 @@
                 
                 <textarea id="answer" placeholder="Write your answer deeply..." autofocus></textarea>
                 
-                <button>Next Player</button>
-                <button class="next">FINISH</button>
-                <button class="again">Play Again</button>
+                <button class="next">Next Player</button>
+                <button class="finish">FINISH</button>
                 <button class="vote">Vote To Show Results</button>
                 
                 <div id="results">
                     <h2>Results</h2>
                     <p class="player-answer"></p>
+                </div>
+
+                <button class="again">Play Again</button>
+
+                <div class="menu">
+                    <label id="playernumber" for="player-names">player 1 name :</label>
+                    <textarea placeholder="Write Your Name... " id="namearea" autofocus></textarea>
+                    <br>
+                    <button>Add New player</button>
+                    <button>Start questions</button>
                 </div>
                 
             </div>

@@ -16,27 +16,30 @@ body {
   
 h1 {
     margin-top: 20px;
-    margin-bottom:120px ;
+    margin-bottom: 100px ;
     color: #fff; 
     font-size: 2em; 
 }
   
 .card {
+    display: none;
     margin-bottom: 20px ;
-    border-radius: 5px; 
-    background: linear-gradient(to bottom, #000 0%, #442a8d 100%); 
+    border-radius: 25px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("img/bg.png");
+    background-position: center;
+    background-size: cover;
     padding: 30px;
-    min-height: 200px;
+    min-height: 242px;
     width: 320px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
     position: relative; 
     transition: transform 0.5s ease-in-out; 
     color: #fff; 
-    outline: 1.5px solid rgb(71, 62, 62);
+    outline: 1.5px solid rgb(68, 42, 141);
     outline-offset: 2px;
 }
   
-.flipped1 {
+.flips {
     transform: rotateY(180deg); 
 } 
 
@@ -56,8 +59,21 @@ h1 {
     font-weight: bolder;
 }
 
-.vote,.next,.again{
+.vote,.next,.again,.finish{
     display: none;
+}
+
+.turn{
+    font-size: x-large;
+    margin-right: 160px;
+    filter: brightness(200%);
+}
+.nextturn{
+    filter: brightness(80%);
+    color: gray;
+    text-shadow: 0.3px 0.3px 0.3px black;
+    margin: 0 0 10px 180px;
+    font-size: large;
 }
 
 @keyframes fade-in{
@@ -104,6 +120,16 @@ textarea {
     color: #333; 
     font-size: 16px; 
     border-radius: 3px;
+}
+#answer{
+    display: none;
+}
+#namearea{
+    margin-top: 20px;
+    height: 35px;
+}
+#playernumber{
+    font-size: x-large;
 }
   
 button {
