@@ -50,6 +50,7 @@ function playeradded(){
         playersnumber++
         thePlayers.push(nameArea.value)
         nameArea.value = ""
+        nameArea.focus()
     }  
 }
 
@@ -74,6 +75,7 @@ function startquestions(){
         show(button[0])
         turn.textContent = thePlayers[0] +"'s turn"
         nextTurn.innerHTML = "------->  " + thePlayers[1]
+        answerArea.focus()
     }
     
 }
@@ -86,6 +88,7 @@ function showingQuestion(){
     clickedToShowQuestion = true
     cardContent.style.display = "block"
     cardContent.classList.add("fadein")
+    answerArea.focus()
 
     if(arrayIndex > 1){
         flip(cardContent)
